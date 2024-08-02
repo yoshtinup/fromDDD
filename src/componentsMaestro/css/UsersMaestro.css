@@ -1,0 +1,163 @@
+/* Estilos para el contenedor principal */
+.admin-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Encabezado */
+  .admin-header {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .admin-header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .admin-header p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+  }
+  
+  /* Botones de acción */
+  .admin-actions {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .admin-actions button {
+    background-color: #000; /* Fondo negro */
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .admin-actions button:hover {
+    background-color: #333; /* Cambia el color en hover */
+  }
+  
+  .admin-actions .btn-add-user::before {
+    content: '+';
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  
+  .admin-actions .btn-import-users::before {
+    color: #fff;
+    content: '⇧';
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  
+  .admin-actions .btn-filter::before {
+    content: '🔍';
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  
+  /* Tabla de usuarios */
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .users-table thead {
+    background-color: #f4f4f4;
+  }
+  
+  .users-table th,
+  .users-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .users-table th {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .users-table td {
+    font-size: 14px;
+  }
+  
+  .users-table tr:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .users-table .btn-action {
+  
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+  }
+  
+  .users-table .btn-action:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .users-table .btn-action::before {
+    content: '✏️'; /* Icono de edición */
+    font-size: 14px;
+    margin-right: 3px;
+  }
+  
+  .users-table .btn-action:nth-child(1)::before {
+    content: '🗑️'; /* Icono de eliminación */
+  }
+  
+  .users-table .tag {
+  
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 12px;
+  }
+  
+  /* Buscador */
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .search-container input[type="text"]:focus {
+    outline: none;
+    border-color: #aaa;
+  }
+  
+  .search-container .search-icon {
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+    color: #333;
+  }
+  

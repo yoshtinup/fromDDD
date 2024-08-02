@@ -1,0 +1,86 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding:10rem;
+  text-align: center;
+  background-color: #eeeeee; /* Fondo negro */
+  color: #000000; /* Texto blanco */
+}
+
+.logo {
+  width: 450px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene la proporción del logo */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 5em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 5em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 9em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Estilos para el formulario de login */
+form {
+  background: #8d8d8d; /* Fondo del formulario */
+  padding: 3.8rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(0, 125, 250);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 2.5rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 2.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0286cd;
+  color: #fff;
+  padding: 2rem 8.5rem;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 300ms, transform 200ms;
+}
+
+form button:hover {
+  background-color: #07355e;
+  transform: scale(1.05);
+}

@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: dimgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+  padding:5rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: background-color 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
